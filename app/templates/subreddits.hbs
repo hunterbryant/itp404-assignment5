@@ -1,0 +1,7 @@
+{{#each model as |post|}}
+    <div class="post container">
+        <h4>{{post.data.title}}</h4> {{post.data.num_comments}} comments, {{post.data.ups}} upvotes, {{post.data.downs}} downvotes, {{post.data.domain}}
+    </div>
+{{/each}}
+
+{{outlet}}
