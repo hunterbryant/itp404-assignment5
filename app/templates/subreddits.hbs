@@ -1,12 +1,5 @@
 {{#each model as |post|}}
-    <div class="post container">
-        {{#if post.data.thumbnail}}
-          <img src={{post.data.thumbnail}} />
-        {{else}}
-          <img src='http://via.placeholder.com/100x100' />
-        {{/if}}
-        <h4>{{post.data.title}}</h4> {{post.data.num_comments}} comments, {{post.data.ups}} upvotes, {{post.data.downs}} downvotes, {{post.data.domain}}
-    </div>
+    {{reddit-post post=post}}
 {{/each}}
 
 {{outlet}}
