@@ -1,0 +1,11 @@
+<div class="unread-email" onClick={{action "readEmail"}}>
+	{{#if email.read}}
+		<p class="emailTitle read">
+			{{email.title}}
+		</p>
+	{{else}}
+		<p class="emailTitle">
+			{{email.title}}
+		</p>
+	{{/if}}
+</div>

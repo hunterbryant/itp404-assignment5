@@ -1,5 +1,5 @@
 <div class="container">
-    
+
 <h1>Ember Reddit Search</h1>
 
 <form onsubmit={{action "searchForSubreddit"}}>
@@ -8,4 +8,10 @@
 </form>
 
 {{outlet}}
+
+Emails:
+{{#each emails as |email|}}
+  {{unread-email email=email readEmail=(action "markAsRead")}}
+{{/each}}
+
 </div>

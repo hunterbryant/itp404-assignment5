@@ -98,3 +98,20 @@ img {
   width: 100px;
   margin-top: 8px;
 }
+
+.unread-email {
+  background: #f2f2f2;
+  height: 56px;
+  padding-top: 18px;
+  padding-left: 24px;
+  width: 400px;
+  margin-bottom: 8px;
+}
+
+.emailTitle {
+  font-weight: bold;
+}
+
+.read {
+  font-weight: normal;
+}
